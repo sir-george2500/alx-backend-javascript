@@ -1,10 +1,12 @@
 // utils.js
 const Utils = {
   calculateNumber: (type, a, b) => {
+    a = Math.round(a);
+    b = Math.round(b);
+
     if (type === 'SUM') {
-      return Math.round(a) + Math.round(b);
+      return a + b;
     }
-    // Add more operations if needed
   }
 };
 
